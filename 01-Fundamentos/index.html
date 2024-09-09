@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Programación</title>
+  <!-- 
+  Segunda forma de escribir código JS
+  Dentro de la etiqueta <head></head> colocamos colocamos la etiqueta de <script></script>
+  Esta forma tiene el inconveniente  de que si el cógigo interactua con alguin elemento html, marcara error pq el documento aun no ha sido colocado.
+  ASe utiliza el atributo defer en la etiqueta script para que espere a cargar todo el html antes de ejecutar un codigo.
+  -->
+  <script defer>
+    console.log("Mensaje desde el escript dento de head")
+  </script>
+
+  <!-- 
+  Dentro de las etiquetas <head></head> usamos las etiquetas <script></script> con el atributo "scr2 s
+  Esto quiere decir que podemos enlazar un archivo externo para ser leido en html 
+  -->
+  <script defer src="./holamundo.js"></script>
+</head>
+
+<body>
+  <h1>Fundamentos de Programción </h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illo facilis eius, explicabo, facere eligendi
+    temporibus assumenda recusandae officiis animi laboriosam reprehenderit quae maiores magnam quam! Doloribus aliquid
+    excepturi at.</p>
+
+  <!-- 
+  Primera forma de escribir JAVASCRPT 
+  dentro de la etiqueta <script>...codigo... </script>
+  escribimos el código de JS
+
+  Esta etiqueta esta definida antes de la etiqueta de cierre del codigo </body> 
+  Esto es pra cuanmdo el codigo interactue con algun elemnto de html este ya este creado antes ejecutar las instrucciones 
+  -->
+
+  <script>
+    console.log("Mensaje desde el script antes del cierre del body")
+  </script>
+</body </html>
