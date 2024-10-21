@@ -99,3 +99,83 @@ console.log(numerosuerte);
 /* let numeroeliminado = numerosuerte.pop(); */
 numerosuerte.pop(3);
 console.log(numerosuerte);
+
+/* 
+
+unshift() agrgar un elemento al inicio del array 
+nombreArray.unshift(dato)
+
+*/
+
+console.log(frutasfavoritas);
+frutasfavoritas.unshift("pitajaya");
+console.log(frutasfavoritas);
+
+/* 
+
+Shift elimina el primer elemneto del array y te lo devuelve
+nombreArray.shift
+*/
+
+console.log(numerosuerte);
+let quitarprimero = numerosuerte.shift();
+console.log(numerosuerte);
+console.log(quitarprimero);
+
+/* 
+
+indexof()= encuentra o devuelve un elemento en el array 
+
+nombreArray.indexof(dato);
+
+*/
+
+let indece = frutasfavoritas.indexOf("piña")
+console.log(indece)
+
+/* 
+
+Splice puede eliminar o agrgar elemntos al array desde una posicion especifica.
+
+Para eliminar es:
+nombreArray.splice(indicedeinicio, indicefinal);
+
+Para agregares:
+nombreArray.splice(indiceInicio, pasos, valores)
+
+*/
+
+
+console.log (frutasfavoritas);
+frutasfavoritas.splice(1,2);
+console.log (frutasfavoritas);
+frutasfavoritas.splice(1,0, "fresa", "platano");
+
+/* 
+
+slice crea una copia de una porsion del array
+
+nombreArray.slice(indicedeinicio, indicefinal);
+
+*/
+
+let frutascopia = frutasfavoritas.slice (1,2);
+console.log (frutascopia);
+
+/* 
+
+sort: ordena los elementos de imn array de mayor a menor 
+
+nombreArray.sort() -> no se pone dada entre los parentesis
+
+*/
+
+console.log (frutasfavoritas);
+frutasfavoritas.sort();
+console.log (frutasfavoritas);
+
+console.log (numerosuerte);
+numerosuerte.sort();
+console.log (numerosuerte);
+
+
