@@ -89,3 +89,26 @@ elemento.innerHTML =" <tag>  ...</tag>"
 
 titulo.innerHTML = "amigos <span>pokecitos</span>!";
 lista.innerHTML = "<li>Snorlax</li> <li>Mew</li>";
+
+
+
+const enlace = document.getElementsByTagName("a");
+console.log (enlace [0].getAttribute("href"));
+
+
+
+enlace[0].removeAttribute("href")
+console.log (enlace[0].removeAttribute("href"))
+
+
+
+
+enlace[0].setAttribute("href", "https://www.pokemon.com/el");
+console.log (enlace[0].getAttribute("href"));
+
+
+console.log (enlace[0].getAttribute("target"));
+enlace[0].setAttribute("target", "_blank");
+
+
+console.log (enlace[0].getAttribute("target"));
